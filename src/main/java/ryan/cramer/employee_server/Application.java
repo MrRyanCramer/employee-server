@@ -29,7 +29,7 @@ public class Application {
         		try {
         			byte[] jsonData = Files.readAllBytes(Paths.get(args[0]));
         			ObjectMapper objectMapper = new ObjectMapper();
-                	objectMapper.registerModule(new JavaTimeModule());
+              objectMapper.registerModule(new JavaTimeModule());
 
         			List<Employee> list = Arrays.asList(objectMapper.readValue(jsonData, Employee[].class));
         			for (Employee emp: list) {
@@ -42,6 +42,6 @@ public class Application {
         		System.out.println("Defaulting to empty employee set.  "
         				+ "Provide a filepath containing employees as the first command line argument to import.");
         	}
-        };
-    }
+		};
+	}
 }
