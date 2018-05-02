@@ -1,2 +1,2 @@
 # employee-server
-An example CRUD REST server for employees
+An example CRUD REST server for employees.
