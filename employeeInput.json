@@ -1,0 +1,38 @@
+[
+	{
+	  "id" : 1,
+	  "firstName" : "Bruce",
+	  "middleInitial" : "H",
+	  "lastName" : "Banner",
+	  "birthDate" : "1980-01-02",
+	  "employmentDate" : "2018-02-02",
+	  "active" : true
+	},
+	{
+	  "id" : 2,
+	  "firstName" : "Matt",
+	  "middleInitial" : "D",
+	  "lastName" : "Murdoc",
+	  "birthDate" : "1985-05-01",
+	  "employmentDate" : "2017-01-02",
+	  "active" : true
+	},
+	{
+	  "id" : 3,
+	  "firstName" : "Peter",
+	  "middleInitial" : "S",
+	  "lastName" : "Parker",
+	  "birthDate" : "1987-05-09",
+	  "employmentDate" : "2011-12-02",
+	  "active" : false
+	},
+	{
+	  "id" : 4,
+	  "firstName" : "Tony",
+	  "middleInitial" : "I",
+	  "lastName" : "Stark",
+	  "birthDate" : "1983-10-12",
+	  "employmentDate" : "2013-06-13",
+	  "active" : true
+	}
+]
