@@ -19,17 +19,16 @@ import org.springframework.security.provisioning.InMemoryUserDetailsManager;
 @EnableWebSecurity
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
 	private PasswordEncoder encoder = PasswordEncoderFactories.createDelegatingPasswordEncoder();
-	
+
 	// Authentication
 	@Autowired
 	public void configureGlobal(AuthenticationManagerBuilder auth) throws Exception {
 		auth.inMemoryAuthentication()
 			.passwordEncoder(encoder)
 			.withUser("user")
-        	.password(encoder.encode("password"))
+			.password(encoder.encode("password"))
 			.roles("USER");
 	}
-	
 
 	// Authorization
 	@Override
@@ -43,10 +42,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
 	@Bean
 	public UserDetailsService userDetailsService() {
-		UserDetails user = User.withUsername("user")
-				.password(encoder.encode("password"))
-				.roles("USER")
-				.build();
+		UserDetails user = User.withUsername("user").password(encoder.encode("password")).roles("USER").build();
 		return new InMemoryUserDetailsManager(user);
 	}
 }
