@@ -7,5 +7,6 @@ import org.springframework.data.repository.CrudRepository;
 
 public interface EmployeeRepository extends CrudRepository<Employee, Long> {
 	Optional<Employee> findByIdAndActive(Long id, boolean active);
+
 	List<Employee> findByActive(boolean active);
 }
