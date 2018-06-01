@@ -1,5 +1,5 @@
 # employee-server
-An example CRUD REST server for employees.
+An example CRUD REST server for employees.  It's purpose is solely as an academic exercise and code sample.
 
 ## Dependencies
 This server requires the use of [Java 1.8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) and [Maven](https://maven.apache.org/) to build and run.  The [pom.xml](https://github.com/MrRyanCramer/employee-server/blob/master/pom.xml) file will handle the rest of the dependencies mentioned below.
